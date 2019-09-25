@@ -59,15 +59,49 @@ html, body {
 }
 
 html {
-
+	// font-size: 62.5%
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
 }
+
+@background-color: #f4f4f4;
+@border: border: 1px solid black;
 
 .container {
-	background:#dcdcc6;
+	background: @background-color;
+	width: 460px;
 	margin: 0px auto;
 
+	.nav-content {
+		display: flex;
+		flex-direction: row-reverse;
+		
+
+			a {
+				text-decoration: none;
+			}
+	
+		.top-logo {
+			width: 175px;
+			border-radius: 80%;
+		}
+	}
+
+	.top-header {
+		display: flex;
+		align-content: center;
+		@border
+		width: 380px;
+
+
+		h1 {
+			font-size: 2.5rem;
+
+		}
+	}
+
+
+
 }
 
-.top-logo {
-	width: 300px;
-}
+
