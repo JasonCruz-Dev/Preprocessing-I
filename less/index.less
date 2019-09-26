@@ -56,50 +56,73 @@ table {
 html, body {
 	 height: 100%;
 	 background: #dcdcc6;
+	 width: 100%;
+	 font-family: 'Roboto', sans-serif;
 }
 
-html {
-	// font-size: 62.5%
-	width: 100%;
-	font-family: 'Roboto', sans-serif;
-}
-
+// Variables
 @background-color: #f4f4f4;
 @border: border: 1px solid black;
+@padding: 5px;
+@margin: 2%;
+@trbackground: #dddddd;
+
+// Mixins
+.ffbasic() {
+	font-family: ff-basic-gothic-web-pro-1,ff-basic-gothic-web-pro-2, AppleGothic, "helvetica neue", 'Roboto', sans-serif;
+}
 
 .container {
-	background: @background-color;
-	width: 460px;
+	@background: #f3f4f2;
+	width: 1200px;
 	margin: 0px auto;
+
+	@media (max-width: 500px){
+		width: 100%;
+		padding: 20px;
+	}
 
 	.nav-content {
 		display: flex;
-		flex-direction: row-reverse;
-		
+		justify-content: flex-end;
+		margin: @margin;
+		padding: @padding;
 
+			.nav-button {
+				justify-content: space-between;
+			}
+			
 			a {
 				text-decoration: none;
 			}
+
+
+		.top-header {
+			display: flex;
+			flex-direction: column;
+			// align-content: center;
+			// @border;
+			// width: 380px;
+				
+			.top-logo {
+				width: 175px;
+				border-radius: 10%;
+			}
+		
+			h1 {
+				font-size: 2.5rem;
 	
-		.top-logo {
-			width: 175px;
-			border-radius: 80%;
+			}
 		}
+	
 	}
 
-	.top-header {
-		display: flex;
-		align-content: center;
-		@border
-		width: 380px;
+	.about-section {
+		background-color: @background;
+		padding: 2%
 
 
-		h1 {
-			font-size: 2.5rem;
-
-		}
 	}
-
 
 
 }

@@ -134,32 +134,43 @@ html,
 body {
   height: 100%;
   background: #dcdcc6;
-}
-html {
   width: 100%;
   font-family: 'Roboto', sans-serif;
 }
 .container {
-  background: #f4f4f4;
-  width: 460px;
+  width: 1200px;
   margin: 0px auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
 }
 .container .nav-content {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin: 2%;
+  padding: 5px;
+}
+.container .nav-content .nav-button {
+  justify-content: space-between;
 }
 .container .nav-content a {
   text-decoration: none;
 }
-.container .nav-content .top-logo {
-  width: 175px;
-  border-radius: 80%;
-}
-.container .top-header {
+.container .nav-content .top-header {
   display: flex;
-  align-content: center;
-  @border width: 380px;
+  flex-direction: column;
 }
-.container .top-header h1 {
+.container .nav-content .top-header .top-logo {
+  width: 175px;
+  border-radius: 10%;
+}
+.container .nav-content .top-header h1 {
   font-size: 2.5rem;
+}
+.container .about-section {
+  background-color: #f3f4f2;
+  padding: 2%;
 }
