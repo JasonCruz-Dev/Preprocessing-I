@@ -194,6 +194,66 @@ body {
   color: white;
   font-size: 20px;
 }
+.container .bold {
+  font-weight: bold;
+  font-size: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 .container .about-section {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  margin-bottom: 2%;
+}
+.container .about-section .about {
+  width: 50%;
+}
+.container .about-section .about p {
+  line-height: 1.8em;
+  text-align: justify;
+  width: 70%;
+  font-size: 20px;
+}
+.container .about-section .things-good-at {
+  width: 50%;
+}
+.container .about-section .things-good-at ul li {
   padding: 2%;
+  list-style-type: none;
+  border: 0.5px solid grey;
+  line-height: 2.4em;
+}
+.container .experience {
+  padding-top: 2%;
+  width: 100%;
+}
+.container .experience table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+.container .experience table td,
+.container .experience table th {
+  border-top: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.container .experience table .wh-bold {
+  font-weight: 900;
+}
+.container .experience tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.container .about-me {
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+.container .footer {
+  margin-top: 3%;
+}
+.container .footer p {
+  text-align: center;
+  font-weight: 900;
 }
